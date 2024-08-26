@@ -28,10 +28,10 @@ Data is stored as a Sleep_health_and_lifestyle_dataset csv file
 **Hyperparameter Evaluation and using optimized parameters for model:**
 
 * find the best hyperparameter for the model through trial and error for keras tuner to work
-Activation function: tanh
-Start with 5 neurons
-Add 2 extra hidden layers and 5 neurons each
-Activation function: Softmax for output layer
+  * Activation function: tanh
+  * Start with 5 neurons
+  * Add 2 extra hidden layers and 5 neurons each
+  * Activation function: Softmax for output layer
 * train 216 parameters based on parameter model
 * compile with 100 epochs
 * best accuracy ~93% based on train set
