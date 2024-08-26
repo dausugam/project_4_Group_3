@@ -1,10 +1,13 @@
 **Overview**
+
 Using machine learning model, this project analyzes the dataset of individual’s personal characteristics, daily activities and sleep/health habits to compare the factors influencing sleep disorder. A tool is created to identify behaviors or patterns of people who are deemed “at risk” to prevent them from developing sleep disorder.
 
 **Database**
+
 Data is stored as a Sleep_health_and_lifestyle_dataset csv file
 
 **Data Preprocessing**
+
 * Split the “Blood Pressure” column into two columns “Systolic” and “Diastolic” to have two different numerical values to place the “Sleep Disorder” with a code for people with “Insomnia” as 1 and people with “Sleep Apnea” as 2 and fill in the blanks as 0.
 * Define features of the machine learning model (all except for “Sleep Disorder”) and its output (“Sleep Disorder”)
 * remove “Person ID” column
@@ -17,11 +20,13 @@ Data is stored as a Sleep_health_and_lifestyle_dataset csv file
 [0, 0, 1] is sleep apnea
 
 **Keras Tuner Setting:**
+
 * define the function to provide the best possible model for creation
 * activation function, add first layer of model with initial inputs (number of features from x set)
 * use softmax activation feature for output layer to have different values (one of the three categories)
 
 **Hyperparameter Evaluation and using optimized parameters for model:**
+
 * find the best hyperparameter for the model through trial and error for keras tuner to work
 Activation function: tanh
 Start with 5 neurons
@@ -33,10 +38,12 @@ Activation function: Softmax for output layer
 * accuracy ~89% based on test set so very effective
 
 **Prerequisites**
+
 *Pandas for data manipulation and transformation
 *Tensor Flow for deep learning framework and neural networks
 
 **Summary of Results**
+
 * bar graph: average age of this diverse age group (27-59) dataset: 43 years old
 * histogram of sleep duration records: majority sleep between 7.5-8 hours which is a healthy sign as Google says, “humans who sleep more than 7 hours is healthy”, but some people sleep less than 7 hours
 * box plot to show how many of those who sleep less than 7 hours have sleep disorders: insomnia lower in the spectrum and sleep apnea covers the whole range
