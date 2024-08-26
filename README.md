@@ -39,8 +39,8 @@ Activation function: Softmax for output layer
 
 **Prerequisites**
 
-*Pandas for data manipulation and transformation
-*Tensor Flow for deep learning framework and neural networks
+* Pandas for data manipulation and transformation
+* Tensor Flow for deep learning framework and neural networks
 
 **Summary of Results**
 
