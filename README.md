@@ -58,3 +58,23 @@ Data is stored as a Sleep_health_and_lifestyle_dataset csv file
 * distribution plot to show occupation with similar sleep durations: nurses have lowest sleep duration as well as doctors and teachers have low sleep duration while engineers have fairly good sleep duration which could mean engineers do not have much sleep disorders
 
 **Summary of Gradio App**
+
+Using the machine learning model trained by Daniel, the .h5 file was downloaded and then integrated into a Gradio environment. The purpose of the Gradio app is to provide an engaging, interactive experience for users to enter details and see the model make a prediction on whether they are at risk of developing a sleep disorder or not.
+**Key Features:**
+* Function 1: Accepts a user’s name input and greets them upon clicking the submit button
+*	Function 2: Recording user’s data and using values to make a prediction about the likelihood of developing a sleep disorder
+*	Function 3: Displays a message tailored to the result – conditional response based on result
+**Dependencies Used:**
+*	TensorFlow
+*	Numpy
+*	Gradio
+**Elements Included in App:**
+*	Gradio reactive interface format utilizing block structure
+*	JavaScript animation
+*	Predictive Machine Learning model
+*	Integrated Markdown and HTML code for styling purposes
+**Deployment:**
+*	Hosted permanently on HuggingFace.co Spaces at the following link: https://huggingface.co/spaces/BDTurquoise/Sleep_Disorder_App
+A disclaimer was used to guard against people mistaking the entertainment/educational value that the app provides for medical advice. All elements and data used in the app were cited according to normal standards. Permanent hosting was then created using the Hugging Faces Spaces site.
+![image](https://github.com/user-attachments/assets/a7ee2000-c24f-4f76-adaf-c249d87d8441)
+
